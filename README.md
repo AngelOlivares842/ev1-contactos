@@ -113,7 +113,7 @@ Acciones Rápidas: Enlaces para ver, editar o eliminar cada contacto
 
 Estadísticas: Muestra el número total de contactos
 
-# 2. Agregar Nuevo Contacto
+## 2. Agregar Nuevo Contacto
 URL: `http://127.0.0.1:8000/contactos/agregar/`
 
 Campos del Formulario:
@@ -140,7 +140,7 @@ if len(nombre.strip()) < 2:
     raise ValidationError('El nombre debe tener al menos 2 caracteres')
 ```
 
-# 3. Ver Detalles de Contacto
+## 3. Ver Detalles de Contacto
 URL: `http://127.0.0.1:8000/contactos/detalle/<id>/`
 
 Muestra información completa del contacto:
@@ -151,7 +151,7 @@ Muestra información completa del contacto:
 
 - Botones de acción (editar, eliminar)
 
-# 4. Editar Contacto Existente
+## 4. Editar Contacto Existente
 URL: `http://127.0.0.1:8000/contactos/editar/<id>/`
 
 - Mismo formulario que "Agregar Contacto"
@@ -160,7 +160,7 @@ URL: `http://127.0.0.1:8000/contactos/editar/<id>/`
 
 - Mismas validaciones de integridad de datos
 
-# 5. Eliminar Contacto
+## 5. Eliminar Contacto
 URL: `http://127.0.0.1:8000/contactos/eliminar/<id>/`
 
 - Página de confirmación antes de eliminar
@@ -169,7 +169,7 @@ URL: `http://127.0.0.1:8000/contactos/eliminar/<id>/`
 
 - Redirección a la lista de contactos después de eliminar
 
-🔧 Estructuras de Decisión Implementadas
+# 🔧 Estructuras de Decisión Implementadas
 
 ## 1. Validación de Correo Electrónico
 ```python
@@ -213,7 +213,7 @@ def clean_nombre(self):
     return nombre.strip()
 ```
 
-# 🎨 Interfaz de Usuario
+## 🎨 Interfaz de Usuario
 Diseño Responsive
 - Tailwind CSS: Framework de CSS utility-first
 
@@ -230,14 +230,14 @@ Diseño Responsive
 - * Botones con estados hover
 
 
-# Navegación
+## Navegación
 - Header: Navegación principal entre secciones
 
 - Breadcrumbs: Indicación de ubicación actual
 
 - Footer: Información de copyright
 
-# 📊 Modelo de Datos
+## 📊 Modelo de Datos
 
 Esquema de la Base de Datos
 ```python
@@ -301,8 +301,7 @@ python manage.py migrate
 
 - Verificar permisos de la base de datos
 
-👨‍💻 Autor
-Tu Nombre
+# 👨‍💻 Autor: Angel Olivares
 
 GitHub: [Github profile]
 
